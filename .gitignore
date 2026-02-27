@@ -1,24 +1,177 @@
-# Compiled class file
+############################################
+# Java / Spring Boot
+############################################
 *.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
-*.nar
 *.ear
+*.nar
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Compilados / builds
+target/
+out/
+bin/
+build/
+
+# Spring Boot (logs locais)
+logs/
+*.log
+log/
+*.pid
+
+# Instrumentação / perf
 hs_err_pid*
 replay_pid*
+*.hprof
+
+############################################
+# Maven
+############################################
+.mvn/timing.properties
+
+############################################
+# Gradle
+############################################
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+############################################
+# IDEs e editores
+############################################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse / STS
+.project
+.classpath
+.settings/
+.springBeans
+.factorypath
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VS Code
+.vscode/
+.history/
+
+############################################
+# Lombok / APT
+############################################
+.apt_generated/
+.apt_generated_tests/
+.generated/
+.generated_tests/
+
+############################################
+# SO / arquivos temporários
+############################################
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+############################################
+# Testes / cobertura
+############################################
+# JaCoCo
+jacoco.exec
+**/jacoco.exec
+**/target/site/jacoco/
+**/build/reports/jacoco/
+
+# Surefire / Failsafe
+**/target/surefire-reports/
+**/target/failsafe-reports/
+
+############################################
+# Logs / dumps adicionais
+############################################
+*.trace
+*.stackdump
+
+############################################
+# Ambiente / segredos
+############################################
+.env
+.env.*
+!.env.example
+
+# Arquivos com credenciais
+application-local.properties
+application-local.yml
+application-local.yaml
+application-dev.properties
+application-dev.yml
+application-dev.yaml
+application-prod.properties
+application-prod.yml
+application-prod.yaml
+
+# Chaves/certs
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+############################################
+# Docker / Compose (opcional)
+############################################
+docker-compose.override.yml
+compose.override.yml
+
+############################################
+# Frontend dentro do projeto (se houver)
+############################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+.cache/
+
+############################################
+# Arquivos de runtime / bancos locais
+############################################
+# H2 local
+*.mv.db
+*.trace.db
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+############################################
+# Misc
+############################################
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
